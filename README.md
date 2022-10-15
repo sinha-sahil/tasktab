@@ -1,38 +1,45 @@
-# create-svelte
+# TaskTab
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+TaskTab is a task management app that helps to organize and manage tasks easily.
 
-## Creating a project
+It provides functionality to
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Create a Task List
+- Add Tasks
+- Prioritize Tasks
+- Calculate time taken to complete tasks
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Setup and Development
 
-# create a new project in my-app
-npm create svelte@latest my-app
+- For setup run `pnpm i`
+
+- For running this app use `pnpm run dev`
+
+## Code Artifacts
+
+### Task Categories
+
+```typescript
+id: string
+name: string
+priority : number
+isArchived : boolean
+completed: boolean
+tasks: Task []
 ```
 
-## Developing
+### Task
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```typescript
+id : string
+serialNumber : number
+title: string
+content : string
+isArchived : boolean
+priority: number
+labels : string []
+state : BackLog | Started | Paused | Completed | Discarded
+timeTaken: number
+createdAt: Timestamp
+updatedAt: Timestamp
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

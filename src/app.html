@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body>
-		<div>%sveltekit.body%</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    %sveltekit.head%
+    <style>
+      body {
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div>%sveltekit.body%</div>
+  </body>
 </html>

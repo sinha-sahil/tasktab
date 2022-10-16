@@ -23,7 +23,7 @@
   let isEmailValid = false;
   let isPasswordValid = false;
 
-  let emailFieldProps = {
+  let emailFieldProps : InputProperties = {
     ...defaultInputProperties,
     dataType: 'email',
     label: 'Email',
@@ -35,9 +35,9 @@
     minLength: 3,
     autoComplete: 'email',
     name: 'email'
-  } as InputProperties;
+  };
 
-  let passwordFieldProps = {
+  let passwordFieldProps : InputProperties = {
     ...defaultInputProperties,
     dataType: 'password',
     label: 'Password',
@@ -47,11 +47,11 @@
     },
     focus: false,
     minLength: 6,
-    autoComplete: 'password',
+    autoComplete: 'current-password',
     validationPattern: /[a-z0-9]{6,}/i,
     inProgressPattern: /^[a-z0-9]*[\s]*[a-z\s]*$/i,
     name: 'password'
-  } as InputProperties;
+  };
 
   $: loginButtonProps = {
     enable:

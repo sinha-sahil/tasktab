@@ -17,7 +17,7 @@ It provides functionality to
 
 ## Code Artifacts
 
-### Task Categories
+### Task List
 
 ```typescript
 id: string

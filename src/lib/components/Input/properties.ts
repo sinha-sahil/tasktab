@@ -1,4 +1,4 @@
-import type { AutoCompleteType, CustomValidator, InputDataType, Length } from '$lib/types';
+import type { AutoCompleteType, CustomValidator, InputDataType } from '../types';
 
 export type InputProperties = {
   value: string;

@@ -12,7 +12,8 @@ export type AutoCompleteType =
   | 'postal-code'
   | 'street-address'
   | 'on'
-  | 'address-level1';
+  | 'address-level1'
+  | 'current-password';
 
 /**
  * @name CustomValidator
